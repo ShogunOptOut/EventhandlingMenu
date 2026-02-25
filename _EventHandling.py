@@ -1,8 +1,10 @@
+# CTk transparency/opacity
 
-# BEISPIEL Eventhandler: Button
+from tkinter import *           # Funktionen der Benutzeroberfläche importieren
+from PIL import Image
+# import customtkinter
 
-from tkinter import *       # Funktionen der Benutzeroberfläche importieren
-
+## BEISPIEL Eventhandler: Button
 
 # INTERFACE
 window = Tk()                   # GUI-Modul tkinter (Tk) wird Variable zugewiesen
@@ -22,8 +24,8 @@ canvas.create_image(0, 0, image=bg_image, anchor=NW)
 
 
 # MENÜ-FRAME
-menu_frame = Frame(window, bg="#00FF00")
-menu_frame.place(x=50, y=300)
+menu_frame = Frame(window, bg="#000000")
+menu_frame.place(x=1050, y=50)
 
 
 # === Titel ===
@@ -92,16 +94,16 @@ lbl1 = Label(window, text="", bg="black", fg="white") # Titel
 canvas.create_window(200, 150, window=lbl1)
 lbl1.pack(pady=5)
 
-# BUTTONS
-btn1 = Button(window, text="Text anzeigen", command=text_anzeigen)
-btn1.pack(pady=5)
+# # BUTTONS
+# btn1 = Button(window, text="Text anzeigen", command=text_anzeigen)
+# btn1.pack(pady=5)
 
-btn2 = Button(window, text="Text löschen.", command=text_loeschen)
-btn2.pack(pady=5)
+# btn2 = Button(window, text="Text löschen.", command=text_loeschen)
+# btn2.pack(pady=5)
 
-canvas.create_window(240, 200, window=btn1)
+# canvas.create_window(240, 200, window=btn1)
 
-canvas.create_window(240, 200, window=btn2)
+# canvas.create_window(240, 200, window=btn2)
 
 
 
